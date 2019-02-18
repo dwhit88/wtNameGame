@@ -7,7 +7,7 @@ Steps to install and run
 - If you see a Gradle prompt, simply check "Use auto-import" and "Use gradle wrapper task configuration" and click OK
 - In the IntelliJ terminal, type the following to ensure that the gradle build is complete
     > gradle clean build test
-- To run the entire test suite, navigate to src/main/java/tCases/TestName and click the green play button next to the class name in the code
+- To run the entire test suite, navigate to src/main/java/tSuite/TestSuite, click the green play button next to the class name in the code, and click "Run 'TestSuite'".
 
 Tips for running the test suite
 - Test suite is able to run in Chrome, Firefox, and Safari and can even run headless in Chrome and Firefox
