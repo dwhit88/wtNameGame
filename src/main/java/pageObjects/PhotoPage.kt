@@ -142,17 +142,23 @@ class PhotoPage(private val driver: WebDriver) {
                 if (driver.pageSource.contains(".jpg")){  //images are loaded on the page
                     //Check that name in question has changed AND that photos have changed
                     val samePhotos: List<WebElement> = driver.findElements(By.className("photo"))
-                    for (samePagePhoto in samePhotos){
-                        samePagePhotoNames.add(samePagePhoto.findElement(By.className("name")).text)
-                    }
 
-                    if (nameText == driver.findElement(By.id("name")).text || photoNames == samePagePhotoNames){
+                    if (samePhotos.size != 5){
                         Commands.waitForSeconds(1000)
                         i++
                     } else {
-                        initElements()
-                        printCurrentNames()
-                        break
+                        for (samePagePhoto in samePhotos){
+                            samePagePhotoNames.add(samePagePhoto.findElement(By.className("name")).text)
+                        }
+
+                        if (nameText == driver.findElement(By.id("name")).text || photoNames == samePagePhotoNames){
+                            Commands.waitForSeconds(1000)
+                            i++
+                        } else {
+                            initElements()
+                            printCurrentNames()
+                            break
+                        }
                     }
                 } else {  //images are not loaded yet on the page
                     Commands.waitForSeconds(1000)
