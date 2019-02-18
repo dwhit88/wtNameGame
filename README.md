@@ -1,5 +1,7 @@
 # WT Name Game
 
+This is automation code to test the WT test project. All of it is written in Kotlin.
+
 Steps to install and run
 - Clone the repository and open the project in IntelliJ
 - If you see a Gradle prompt, simply check "Use auto-import" and "Use gradle wrapper task configuration" and click OK
