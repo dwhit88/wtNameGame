@@ -1,11 +1,11 @@
-package tCases
+package tSuite
 
 import org.openqa.selenium.WebDriver
 import org.testng.annotations.*
 import pageObjects.PhotoPage
 import setup.RunConfig
 
-class TestName {
+class TestSuite {
 
     var driver: WebDriver? = null
 
