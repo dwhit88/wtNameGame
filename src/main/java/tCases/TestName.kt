@@ -86,7 +86,7 @@ class TestName {
     fun verifyIncorrectAppearMoreFrequently(){
         PhotoPage(driver!!).apply {
             waitForPageLoad(false)
-            repeat(50){
+            repeat(30){
                 when ((0..1).shuffled().first()){
                     0 -> {
                         selectIncorrectName()
