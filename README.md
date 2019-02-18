@@ -3,7 +3,8 @@
 Steps to install and run
 - Clone the repository and open the project in IntelliJ
 - If you see a Gradle prompt, simply check "Use auto-import" and "Use gradle wrapper task configuration" and click OK
-- In the IntelliJ terminal, type "gradle clean build test" to ensure that the gradle build is complete
+- In the IntelliJ terminal, type the following to ensure that the gradle build is complete
+    > gradle clean build test
 - To run the entire test suite, navigate to src/main/java/tCases/TestName and click the green play button next to the class name in the code
 
 Tips for running the test suite
